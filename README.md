@@ -42,5 +42,8 @@ services:
 networks:
   default:
     external:
-name: nat
+      name: nat  # ŠÂ‹«‚É‡‚í‚¹‚Ä“K‹X•ÏX
 ```
+
+## ’ˆÓ
+`mysql\php.ini`‚Í—]•ª‚Èİ’è‚ªŠÜ‚Ü‚ê‚Ä‚¢‚é‚©‚à
