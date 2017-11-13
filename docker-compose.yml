@@ -1,0 +1,29 @@
+version: '3'
+services:
+  web:
+    build:
+      context: ./iis
+      dockerfile: Dockerfile
+      args:
+        - PORT_NUM=8000
+        - DB_USER=wordpress
+        - DB_PASSWORD=p@ssw0rd
+        - DB_HOST=db
+    ports:
+      - 8000:8000
+    links:
+      - db
+    tty: true
+  db:
+    build:
+      context: ./mysql
+      dockerfile: Dockerfile
+      args:
+        - ROOT_PASSWORD=p@ssw0rd
+        - WP_USER=wordpress
+        - WP_PASSWORD=p@ssw0rd
+    tty: true
+networks:
+  default:
+    external:
+      name: nat
