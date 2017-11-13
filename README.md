@@ -46,4 +46,4 @@ networks:
 ```
 
 ## ’ˆÓ
-`mysql\php.ini`‚Í—]•ª‚ÈÝ’è‚ªŠÜ‚Ü‚ê‚Ä‚¢‚é‚©‚à
+`iisl\php.ini`‚Í—]•ª‚ÈÝ’è‚ªŠÜ‚Ü‚ê‚Ä‚¢‚é‚©‚à
