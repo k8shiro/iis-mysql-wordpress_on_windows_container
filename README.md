@@ -11,6 +11,14 @@ cd iis-mysql-wordpress_on_windows_container
 docker-compose up -d
 ```
 
+IISのポート番号・DB接続用のユーザー/パスワードはdocker-compose.yml内のargの値で変更可能です。
+
+実行することで、webコンテナ内にIIS・WordPressが立ち上がり、dbにMySQLが立ち上がります。
+WordPress側ではDB接続情報が格納されるwp-config.phpの設定まで行われ、MySQLにはWordPressからの接続ユーザの作成・wordpressテーブルの作成・rootユーザのパスワード変更が行われます。
+
+起動後はhttp://<host_ip>:8000/wordpress/wp-adminからブログ名等の初期設定が行えます。
+
+
 ## docker-compose
 
 ```
